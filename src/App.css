@@ -2,6 +2,7 @@
 
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 .form {
@@ -9,16 +10,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 90px;
+}
+.form-sign-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 form {
   padding: 100px;
   background-color: rgb(191, 253, 191);
   border-radius: 10px;
+  height: 100%;
 }
 
 .input-part {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -31,7 +42,7 @@ form {
   height: 30px;
 }
 
-.submit-btn, .sign-up-btn, .signIn-btn {
+.submit-btn, .sign-up-btn, .signIn-btn, .signUp-btn {
   border-radius: 5px;
   height: 40px;
   font-size: larger;
@@ -57,17 +68,52 @@ input {
 
 .signIn-btn-holder {
   display: flex;
-  height: 30px;
+  height: 50px;
   justify-content: center;
   margin-top: 30px;
 }
 
+
+
 .signIn-btn {
   width: 90px;
+  margin-left: 50px;
+}
+.signUp-btn{
+  margin-right: 50px;
 }
 
 button:hover {
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.751); 
   color: rgba(255, 255, 255, 0.8);
+}
+
+#url{
+  border: 1px solid black;
+}
+.nav-bar-usr-page{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: rgb(191, 253, 191);
+}
+.heading-nav-bar
+{
+    font-weight: bolder;
+}
+.navbar-icon{
+    cursor: pointer;
+    font-size: 40px;
+    transition: transform 0.2s ease-in-out, 0.3s ease-in-out;
+}
+.navbar-icon:hover{
+  transform: scale(1.2);
+  color: white;
+  background-color: black;
 }
