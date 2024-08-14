@@ -117,3 +117,7 @@ button:hover {
   color: white;
   background-color: black;
 }
+
+#go-back-btn{
+  border: 1px sold black;
+}

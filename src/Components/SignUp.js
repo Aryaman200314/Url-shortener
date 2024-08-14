@@ -10,7 +10,6 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const navigate = useNavigate();
-
   const handleSignUp = async (e) => {
     e.preventDefault();
     const { data, error } = await supabase.auth.signUp({
@@ -22,7 +21,6 @@ function SignUp() {
       alert(`Error: ${error.message}`);
     } else {
       alert(`Signed up as ${data.user.email}`);
-     <UserInfo name={firstName} />
     }
     setEmail('');
     setPassword('');
@@ -72,9 +70,10 @@ function SignUp() {
             placeholder='Add Phone Number'
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
+          
         </div>
         <div className='signIn-btn-holder'>
-          <button className='signUp-btn' type='submit'>Sign Up</button>
+          <button className='signUp-btn' onClick={handleSignUp} type='submit'>Sign Up</button>
           <button className='signIn-btn' onClick={() => navigate('/signIn')}>Sign In</button>
         </div>
       </form>

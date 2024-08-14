@@ -10,9 +10,12 @@ function SignIn() {
   const navigate = useNavigate();
 
   const handlenewuser = () => {
-    navigate('/signup'); // Navigate to SignUp page
+    navigate('/signup'); 
   };
 
+  const handleGuesLogIn = () => {
+    navigate('/home');
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(username);
@@ -60,6 +63,8 @@ function SignIn() {
         </div>
       </form>
       <button className='sign-up-btn' onClick={handlenewuser}>Make New Account</button>
+      <br />
+      <button className='login-as-guest' onClick={handleGuesLogIn}>Guest Log In</button>
     </div>
   );
 }
