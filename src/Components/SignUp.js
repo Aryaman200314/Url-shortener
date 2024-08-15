@@ -74,7 +74,7 @@ function SignUp() {
         </div>
         <div className='signIn-btn-holder'>
           <button className='signUp-btn' onClick={handleSignUp} type='submit'>Sign Up</button>
-          <button className='signIn-btn' onClick={() => navigate('/signIn')}>Sign In</button>
+          <button className='signIn-btn' >Sign In</button>
         </div>
       </form>
     </div>

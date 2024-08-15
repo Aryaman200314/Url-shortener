@@ -1,18 +1,3 @@
-// import React from 'react'
-// import { useLocation } from 'react-router-dom'
-// function UserInfo({}) {
-//     const location = useLocation();
-//     const data = location.state;
-//   return (
-//     <div>
-//         <p>Name: {data.fName}</p>
-//     </div>
-//   )
-// }
-
-// export default UserInfo
-
-
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 function UserInfo() {
@@ -34,9 +19,7 @@ function UserInfo() {
       <p>Phone Number: {data.phone || 'N/A'}</p>
     </div>
     <div>
-        <button id='go-back-btn' onClick={handleGoBack}>
-            go Back
-        </button>
+        <button id='go-back-btn' onClick={handleGoBack}>Go Back</button>
     </div>
     </>
   
